@@ -87,6 +87,10 @@ public class SHViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    public override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     @IBAction func imageViewDidSwipeLeft() {
         if filterIndex == filterNameList.count - 1 {
             filterIndex = 0
